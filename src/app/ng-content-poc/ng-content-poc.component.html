@@ -1,0 +1,16 @@
+<hr/>
+<ng-template #default>
+        <span>default content</span> 
+ </ng-template>
+ 
+<p>POC - to check how ng content works</p>
+<hr/>
+<ng-content select="p"></ng-content>
+<ng-content></ng-content>
+
+<ng-container *ngTemplateOutlet="customTemplate?customTemplate:default">
+</ng-container>
+
+
+
+

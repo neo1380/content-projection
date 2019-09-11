@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'content-projection';
+  showElement:boolean = true;
+
+  items=[0,1,2];
+  ngContentMarkup:string ="<ng-content select='p'></ng-content>"
+  title = 'POC on content projection and ng template';
 }
